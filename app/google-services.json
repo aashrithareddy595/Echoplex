@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "429149348860",
+    "project_id": "echoplex-a8b99",
+    "storage_bucket": "echoplex-a8b99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429149348860:android:01063d054b1d2a60604879",
+        "android_client_info": {
+          "package_name": "com.example.echoplex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBBh7wnruqEIp5zh153YIhrp8wS5TjM84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

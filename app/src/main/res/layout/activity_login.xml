@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:outlineAmbientShadowColor="@color/black"
+        android:elevation="8dp"
         >
 
         <LinearLayout
@@ -37,12 +37,14 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <EditText
-                android:id="@+id/et_email"
+                android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@android:color/black"
                 android:hint="Email"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/black"
                 android:paddingBottom="10dp"
                 android:layout_weight="1"
                 android:textColorHint="@color/black" />
@@ -61,7 +63,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/et_password"
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -69,6 +71,8 @@
                 android:backgroundTint="@android:color/black"
                 android:hint="Password"
                 android:inputType="textPassword"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/black"
                 android:paddingBottom="10dp"
                 android:textColorHint="@color/black" />
 
@@ -83,7 +87,7 @@
 
 
         <TextView
-            android:id="@+id/tv_forgot_password"
+            android:id="@+id/tvFP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -93,12 +97,14 @@
             android:textSize="14sp" />
 
         <Button
-            android:id="@+id/login_btn"
+            android:id="@+id/loginBtn"
             android:layout_width="148dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
-            android:layout_marginTop="48dp"
+            android:layout_marginVertical="40dp"
             android:backgroundTint="@color/btnColor"
+            android:elevation="10dp"
+            android:stateListAnimator="@null"
             android:text="Login"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -108,7 +114,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tv_login"
+        android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="31dp"
@@ -121,11 +127,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/logo_png"
+        android:id="@+id/logoPng"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="260dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/tvLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
