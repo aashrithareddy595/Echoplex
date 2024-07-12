@@ -22,7 +22,7 @@ class LoginActivity : AppCompatActivity() {
         //check if user already logged-in
         val currentUser :FirebaseUser? = auth.currentUser
         if( currentUser!= null){
-            startActivity(Intent(this , MainActivity::class.java))
+            startActivity(Intent(this , ProfileActivity::class.java))
             finish()
         }
     }
@@ -55,7 +55,7 @@ class LoginActivity : AppCompatActivity() {
                     .addOnCompleteListener{task->
                         if(task.isSuccessful){
                             Toast.makeText(this , "Log-In successful!" , Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this , MainActivity::class.java))
+                            startActivity(Intent(this , ProfileActivity::class.java))
                             finish()
                         }else{
                             Toast.makeText(this , "${task.exception?.message}" , Toast.LENGTH_SHORT).show()

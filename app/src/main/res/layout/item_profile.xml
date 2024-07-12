@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="13dp"
+    app:cardElevation="12dp"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="34dp"
+        android:elevation="100dp"
+        android:layout_marginVertical="34dp"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/itemProfileImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/userimg"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/itemProfileName"
+                android:text="Profile Name"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:textSize="28sp"
+                />
+            <TextView
+                android:id="@+id/itemDesc"
+                android:text="Android Developer"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:textColor="@color/btnColor"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
